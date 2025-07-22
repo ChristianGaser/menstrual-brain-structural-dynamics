@@ -31,7 +31,7 @@ Analyses include:
 - **cat_vol_img2mip.m** — create RGB maximum-intensity-projection ("glass brain") figures from volume data.
 - **README.md** — documentation and usage notes.
 
-## Depemndencies
+## Dependencies
 SPM12 and CAT12 installation is necessary to use this code.
 
 ## Data Access
