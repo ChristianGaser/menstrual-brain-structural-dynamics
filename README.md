@@ -23,25 +23,23 @@ Analyses include:
 - Advanced visualization of eigenbrains and surface effects
 
 ## Repository Structure
-├── scripts/ # All analysis scripts (MATLAB/Octave)
-│ ├── cg_svd.m # SVD/PCA analysis and visualization
-│ ├── cat_stat_svd.m # SVD wrapper for surface data
-│ ├── get_svd_mesh.m # SVD analysis for mesh (surface) files
-│ ├── spm_factorial_design.m # Example batch scripts for SPM/CAT
-│ └── ...
-├── data/ # (Empty) Instructions for data access
-├── results/ # Example outputs (visualizations, CSVs)
-└── README.md # This file
+- **analysis_glm/** — batch scripts for general linear modeling of cortical thickness and VBM data.
+- **analysis_svd_mesh/** — utilities to compute singular value decomposition (SVD) on surface (mesh) data.
+- **analysis_svd_vbm/** — scripts to run SVD on voxel-based morphometry images. Includes *brainmask_GMverytight.nii*.
+- **cat_stat_svd.m** — core routine that performs SVD/PCA on a set of images.
+- **cat_surf_results.m** — viewer for surface-based statistical maps.
+- **cat_vol_img2mip.m** — create RGB maximum-intensity-projection ("glass brain") figures from volume data.
+- **README.md** — documentation and usage notes.
 
 ## Data Access
 Data for this project consists of longitudinal, dense-sampling MRI (T1-weighted) of female subjects (with/without endometriosis) and controls, organized by subject and time point.
 Data is not publicly shared due to privacy; please contact the corresponding author for information on data access or collaboration.
+## Function Overview
 
-cat_stat_svd.m
-High-level SVD analysis for surface (mesh) data, applying cat_stat_svd to all subjects in a group.
+- **cat_stat_svd.m**: performs singular value decomposition (principal component analysis) on a set of NIfTI or GIfTI images. Supports covariates, exclusion of scans, and scanner batch correction.
+- **cat_surf_results.m**: interactive tool to display surface-based statistical maps with various overlays and atlas annotations.
+- **cat_vol_img2mip.m**: generates "glass brain" maximum-intensity projections for up to three volumes using RGB overlays.
+- **get_svd_mesh.m** and **get_svd_mesh_all4.m**: example pipelines that apply `cat_stat_svd` to longitudinal surface/mesh data.
+- **get_svd_vbm_s4d.m** and **get_svd_vbm_s4d_all4.m**: similar pipelines for VBM data filtered with a 4D smoothing approach.
+- **analysis_glm/** scripts: SPM/CAT12 batch files defining factorial designs and contrasts used in the publication.
 
-get_svd_mesh.m
-Batch SVD for longitudinal/surface data (mesh-based thickness).
-
-SPM/CAT12 batch scripts
-Example batch jobs for factorial designs, VBM, and covariate modeling, as in the Nature Neuroscience study.
