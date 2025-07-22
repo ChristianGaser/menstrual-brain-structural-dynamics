@@ -31,11 +31,14 @@ Analyses include:
 - **cat_vol_img2mip.m** — create RGB maximum-intensity-projection ("glass brain") figures from volume data.
 - **README.md** — documentation and usage notes.
 
+## Depemndencies
+SPM12 and CAT12 installation is necessary to use this code.
+
 ## Data Access
 Data for this project consists of longitudinal, dense-sampling MRI (T1-weighted) of female subjects (with/without endometriosis) and controls, organized by subject and time point.
 Data is not publicly shared due to privacy; please contact the corresponding author for information on data access or collaboration.
-## Function Overview
 
+## Function Overview
 - **cat_stat_svd.m**: performs singular value decomposition (principal component analysis) on a set of NIfTI or GIfTI images. Supports covariates, exclusion of scans, and scanner batch correction.
 - **cat_surf_results.m**: interactive tool to display surface-based statistical maps with various overlays and atlas annotations.
 - **cat_vol_img2mip.m**: generates "glass brain" maximum-intensity projections for up to three volumes using RGB overlays.
