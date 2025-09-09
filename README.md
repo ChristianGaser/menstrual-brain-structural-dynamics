@@ -1,7 +1,8 @@
 # Menstrual Cycle Brain Dynamics
 
-[![DOI](https://zenodo.org/badge/DOI/10.1038/s41593-XXX-XXXX-X.svg)](https://doi.org/10.1038/s41593-XXX-XXXX-X)
+[![DOI](https://zenodo.org/badge/DOI/10.1038/s41593-025-02066-2.svg)](https://doi.org/10.1038/s41593-025-02066-2)
 [![Nature Neuroscience](https://img.shields.io/badge/journal-Nature%20Neuroscience-blue.svg)](https://www.nature.com/neuro)
+[![Open Neuro](https://img.shields.io/badge/journal-Open%20Neuro-blue.svg)](https://openneuro.org/datasets/ds006491/versions/1.0.1)
 
 Code and workflows for:  
 **"Hormonal milieu influences whole-brain structural dynamics across the menstrual cycle as revealed by dense sampling in multiple individuals"**  
@@ -36,7 +37,7 @@ SPM12 and CAT12 installation is necessary to use this code.
 
 ## Data Access
 Data for this project consists of longitudinal, dense-sampling MRI (T1-weighted) of female subjects (with/without endometriosis) and controls, organized by subject and time point.
-Data is not publicly shared due to privacy; please contact the corresponding author for information on data access or collaboration.
+Data is available at [OpenNeuro](https://openneuro.org/datasets/ds006491/versions/1.0.1).
 
 ## Function Overview
 - **cat_stat_svd.m**: performs singular value decomposition (principal component analysis) on a set of NIfTI or GIfTI images. Supports covariates, exclusion of scans, and scanner batch correction.
