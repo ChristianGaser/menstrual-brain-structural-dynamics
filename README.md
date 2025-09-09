@@ -5,10 +5,10 @@
 [![Open Neuro](https://img.shields.io/badge/journal-Open%20Neuro-blue.svg)](https://openneuro.org/datasets/ds006491/versions/1.0.1)
 
 Code and workflows for:  
-**"Hormonal milieu influences whole-brain structural dynamics across the menstrual cycle as revealed by dense sampling in multiple individuals"**  
+**"Hormonal milieu influences whole-brain structural dynamics across the menstrual cycle using dense sampling in multiple individuals"**  
 Authors: Carina Heller, Daniel Güllmar, Lejla Colic, Laura Pritschet, Martin Gell, Nooshin Javaheripour, Feliberto de la Cruz, Philine Rojczyk, Carina J. Koeppel, Bart Larsen, Habib Ganjgahi, Frederik J. Lange, Ann-Christine Buck, Tim L. Jesgarzewsky, Robert Dahnke, Michael Kiehntopf, Emily G. Jacobs, Zora Kikinis, Martin Walter, Ilona Croy, Christian Gaser 
 
-Published in: *Nature Neuroscience* (2024)
+Published in: *Nature Neuroscience* (2025)
 
 ---
 
